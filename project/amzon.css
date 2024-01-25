@@ -1,0 +1,621 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: #dcd9d4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
+}
+/* navbar----------------------------------------------------- */
+header {
+  position: fixed;
+  width: 100%;
+}
+.nav_bar {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  color: azure;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  font-weight: 600;
+  /* position: fixed; */
+}
+.border {
+  border: 2px solid transparent;
+}
+.border:hover {
+  border: solid 1px white;
+}
+.navbar_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.amazon_logo {
+}
+.box_1 {
+  width: 200px;
+  height: 40px;
+  text-transform: capitalize;
+}
+.delivary {
+  font-size: x-small;
+}
+.location_logo {
+  display: flex;
+}
+.box_2 {
+  display: flex;
+  height: 40px;
+}
+.options {
+  background-color: lightblue;
+  width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.search {
+  background-color: antiquewhite;
+  width: 400px;
+  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.search_logo {
+  height: 40px;
+  background-color: rgb(184, 138, 11);
+}
+.box_4 {
+}
+.box_5 {
+  display: flex;
+}
+/* another nav----------------------------------------------------- */
+.down_nav {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.774);
+  color: azure;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 600;
+
+  top: 60px;
+}
+/* main content-------------------------------------------- */
+.main_content {
+  height: 200vh;
+  width: 100%;
+
+  position: relative;
+  top: 100px;
+  z-index: -9999;
+}
+.background_image {
+  height: 600px;
+
+  background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/premium/jan7/Under_1499_Tallhero_3000x1200._CB584583557_.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: end;
+}
+.container_one {
+  height: 300px;
+  width: 20%;
+  background-color: aliceblue;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.subcontainer_one {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.cloths {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg");
+}
+.footware {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-2-186-116._SY116_CB636110853_.jpg");
+}
+.subcontainer_two {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.watches {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-3-186-116._SY116_CB636110853_.jpg");
+}
+.bags {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-4-186-116._SY116_CB636110853_.jpg");
+}
+.container_second {
+  height: 300px;
+  width: 20%;
+  background-color: aliceblue;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.inner_containerone {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.bedsheets {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_furnishings_2._SY116_CB584596691_.jpg");
+}
+.vases {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_decor_1._SY116_CB584596691_.jpg");
+}
+.inner_containertwo {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.homestorage {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_storage_1._SY116_CB584596691_.jpg");
+}
+.lighting {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_lighting_2._SY116_CB584596691_.jpg");
+}
+.container_three {
+  height: 300px;
+  width: 20%;
+  background-color: aliceblue;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.internalcontainer_one {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.boult {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boult_Desktop_Qc_1x._SY116_CB577919562_.jpg");
+}
+.boat {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boat_Desktop_Qc_1x._SY116_CB577919562_.jpg");
+}
+.internalcontainer_two {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.noise {
+  height: 100px;
+  width: 40%;
+
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Noise_Desktop_Qc_1x._SY116_CB577919562_.jpg");
+}
+.zebronics {
+  height: 100px;
+  width: 40%;
+
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Zebronics_Desktop_Qc_1x._SY116_CB577919562_.jpg");
+}
+.container_four {
+  height: 300px;
+  width: 20%;
+  background-color: aliceblue;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.singular {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottles {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/Kitchen_PC_QC_186_1._SY116_CB570512815_.jpg");
+}
+.schoolbox {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/Kitchen_PC_QC_186_3._SY116_CB570512815_.jpg");
+}
+
+.doubler {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.coockers {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/1x_Desktop_Quad_card_w_title_-_Card_3._SY116_CB572041232_.jpg");
+}
+.racks {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/Kitchen_PC_QC_186_2._SY116_CB570512815_.jpg");
+}
+.main_two {
+  margin: 15px;
+  height: 300px;
+  width: 100%;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-evenly;
+}
+.container_five {
+  height: 300px;
+  width: 20%;
+  background-color: aliceblue;
+}
+.acce {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.headsets {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg");
+  background-size: cover;
+}
+.keybord {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg");
+  background-size: cover;
+}
+.acce_two {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.computermics {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg");
+  background-size: cover;
+}
+.chairs {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg");
+  background-size: cover;
+}
+.container_six {
+  height: 300px;
+  width: 20%;
+  background-color: aliceblue;
+}
+.clothes_one {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.dresses {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg");
+}
+.knits {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg");
+}
+.clothes_two {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.jacets {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg");
+}
+.jewellary {
+  height: 100px;
+  width: 40%;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_4_x1._SY116_CB595261253_.jpg");
+}
+.container_seven {
+  height: 300px;
+  width: 20%;
+  background-color: azure;
+}
+.topdeals {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.items {
+  height: 200px;
+  width: 100%;
+  background-image: url("https://m.media-amazon.com/images/I/51u-auepbeL._AC_SY230_.jpg");
+  background-size: cover;
+}
+.pecentage {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container_eight {
+  height: 300px;
+  width: 20%;
+  background-color: aliceblue;
+  padding: 20px;
+}
+.gifts {
+  height: 250px;
+  width: 100%;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/LunarNY/Fuji_Single_card_Lunar_New_Year_Graphics_1x_EN._SY304_CB585956471_.jpg");
+}
+.main_three {
+  height: 300px;
+  width: 100%;
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+
+}
+.best_sellers {
+  height: 280px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  transition: all 1s;
+
+  
+}
+.besr_sellers :hover{
+transform: scale(1);
+
+
+}
+.aplinces_1 {
+  height: 280px;
+  width: 15%;
+  background-image: url("https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg");
+}
+.aplinces_2 {
+  height: 280px;
+  width: 10%;
+
+  background-image: url("https://m.media-amazon.com/images/I/71mL0rwKWNL._AC_SY200_.jpg");
+  background-size: cover;
+}
+.aplinces_3 {
+  background-image: url("https://m.media-amazon.com/images/I/71M6a8SHCeL._AC_SY200_.jpg");
+  height: 280px;
+  width: 15%;
+}
+.aplinces_4 {
+  background-image: url("https://m.media-amazon.com/images/I/713afJ6oJ+L._AC_SY200_.jpg");
+  height: 280px;
+  width: 15%;
+}
+.applinces_5 {
+  background-image: url("https://m.media-amazon.com/images/I/51lFr88wxML._AC_SY200_.jpg");
+  height: 280px;
+  width: 15%;
+}
+.aplinces_6 {
+  height: 280px;
+  width: 10%;
+
+  background-image: url("https://m.media-amazon.com/images/I/51fd-ARdg7L._AC_SY200_.jpg");
+  background-size: cover;
+}
+.aplinces_7 {
+  background-image: url("https://m.media-amazon.com/images/I/71RekxT+qML._AC_SY200_.jpg");
+  height: 280px;
+  width: 15%;
+  background-size: cover;
+  /* footer */
+}
+footer {
+  height: 100vh;
+  width: 100%;
+  font-family: Arial;
+}
+.small_footer {
+}
+h4 {
+  padding: 20px;
+
+  height: 50px;
+  width: 100%;
+  background-color: rgba(3, 31, 48, 0.733);
+  text-align: center;
+  font-size: smaller;
+  color: #e3eeff;
+}
+.middle_footer {
+  height: 400px;
+  width: 100%;
+  background-color: rgba(2, 25, 41, 0.877);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+a {
+  color: black;
+  text-decoration: none;
+  color: white;
+  font-size: small;
+  text-align: left;
+}
+.line_1 {
+  height: 350px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.line_2 {
+  height: 350px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.line_3 {
+  height: 350px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.line_4 {
+  height: 350px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.group_1 {
+  color: white;
+  font-size: small;
+}
+.group_2 {
+  color: white;
+  font-size: small;
+}
+.group_3 {
+  color: white;
+  font-size: small;
+}
+.group_4 {
+  color: white;
+  font-size: small;
+}
+.last_footer {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(2, 25, 41, 0.877);
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+}
+.section_1 {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+}
+
+.section_2 {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.first_phase {
+  border: solid 2px white;
+  border-radius: 7px;
+}
+.country{
+
+  border: solid 2px white;
+  border-radius: 7px;
+
+}
